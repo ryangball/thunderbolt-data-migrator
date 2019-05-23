@@ -12,25 +12,27 @@ A script that automates data transfer from one mac to another easily. This is in
 ## Usage
 This script needs to be run in a BASH shell. You can do the following:
 ```bash
-# If you want to clone the repo you should be all good
+# Cloning the repo is preferred
 git clone https://github.com/ryangball/thunderbolt-data-migration.git
 cd thunderbolt-data-migration
-./thunderbolt_data_migration.sh
+sudo ./thunderbolt_data_migration.sh
 ```
 
 *OR*
 
 ```bash
+# If you chose to just copy the raw script text
 cd /path/where/you/copied/the/script/
 chmod +x thunderbolt_data_migration.sh
-./thunderbolt_data_migration.sh
+sudo ./thunderbolt_data_migration.sh
 ```
 
 *OR*
 
 ```bash
+# If you chose to just copy the raw script text
 cd /path/where/you/copied/the/script/
-bash thunderbolt_data_migration.sh
+sudo bash thunderbolt_data_migration.sh
 ```
 
 ## Testing
@@ -43,9 +45,12 @@ testing="true"  # (true|false)
 
 ## Workflow
 1. User receives a dialog box with simple instructions to start up their old machine in [Target Disk Mode](https://support.apple.com/en-us/HT201462) and connect it to their new Mac via Thunderbolt cable (top-most image)
-2. If a user successfully connects their Target Disk Mode booted Mac, the Thunderbolt volume will be detected automatically.
+2. If a user successfully connects their Target Disk Mode booted Mac, the Thunderbolt volume will be detected automatically and move on.
 3. In the event that a Target Disk Mode booted Mac is already connected before the script begins, the user has an option to select the Thunderbolt volume themselves.
 4. If a user exists on the old Mac that matches the logged in username on the new Mac, the script will automatically assume that old user's home folder is the source of our transfer.
 5. If **no** user exists on the old Mac that matches the logged in username on the new Mac, the user will get an option to select from a list of user home folders to determine the source of our transfer.
 6. The script then determines if there is enough space to transfer from the source home folder to the new Mac and continues if space requirements are met.
-7. A full screen jamfHelper dialog is then displayed while the data from the old user's home folder on the old Mac is then transferred to the logged in user's home folder on the new Mac using [rsync](https://ss64.com/osx/rsync.html).
+7. A full screen jamfHelper dialog is then displayed while the old home folder data is transferred to the logged in user's home folder on the new Mac (using [rsync](https://ss64.com/osx/rsync.html)) (image below).
+<p align="center">
+    <img alt="Main Image" width="100%" src="images/fullscreen_jamfHelper.png">
+</p>
