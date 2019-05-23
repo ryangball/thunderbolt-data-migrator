@@ -4,8 +4,9 @@
 # Originally obtained from: https://github.com/ryangball/thunderbolt-data-migration
 
 # This variable can be used if you are testing the script
-# If set to false, the rsync will be bypassed and nothing permanent will done to this Mac
-testing="false"  # (true|false)
+# Set to true while testing, the rsync will be bypassed and nothing permanent will done to this Mac
+# Set to false when used in production
+testing="true"  # (true|false)
 
 # The full path of the log file
 log="/Library/Logs/tunderbolt_data_migration.log"
