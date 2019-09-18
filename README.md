@@ -13,9 +13,9 @@ A script that automates data transfer from one mac to another easily. This is in
 This script needs to be run in a BASH shell. You can do the following:
 ```bash
 # Cloning the repo is preferred
-git clone https://github.com/ryangball/thunderbolt-data-migration.git
-cd thunderbolt-data-migration
-sudo ./thunderbolt_data_migration.sh
+git clone https://github.com/ryangball/thunderbolt-data-migrator.git
+cd thunderbolt-data-migrator
+sudo ./thunderbolt_data_migrator.sh
 ```
 
 *OR*
@@ -23,8 +23,8 @@ sudo ./thunderbolt_data_migration.sh
 ```bash
 # If you chose to just copy the raw script text
 cd /path/where/you/copied/the/script/
-chmod +x thunderbolt_data_migration.sh
-sudo ./thunderbolt_data_migration.sh
+chmod +x thunderbolt_data_migrator.sh
+sudo ./thunderbolt_data_migrator.sh
 ```
 
 *OR*
@@ -32,7 +32,7 @@ sudo ./thunderbolt_data_migration.sh
 ```bash
 # If you chose to just copy the raw script text
 cd /path/where/you/copied/the/script/
-sudo bash thunderbolt_data_migration.sh
+sudo bash thunderbolt_data_migrator.sh
 ```
 
 ## Testing
