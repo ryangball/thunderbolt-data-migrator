@@ -1,4 +1,4 @@
-# Thunderbolt Data Migration
+# Thunderbolt Data Migrator
 A script that automates data transfer from one mac to another easily. This is intended to be used by non-technical individuals with minimal hassle on Macs managed by Jamf Pro (could be customized for other environments).
 <p align="center">
     <img alt="Main Image" width="100%" src="images/main_image.png">
