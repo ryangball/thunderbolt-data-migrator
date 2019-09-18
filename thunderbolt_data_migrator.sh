@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Written by Ryan Ball
-# Originally obtained from: https://github.com/ryangball/thunderbolt-data-migration
+# Originally obtained from: https://github.com/ryangball/thunderbolt-data-migrator
 
 # This variable can be used if you are testing the script
 # Set to true while testing, the rsync will be bypassed and nothing permanent will done to this Mac
